@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Footer } from "../components/layout/Footer";
 import { Link } from "../components/layout/Link";
 import { Page } from "../components/layout/Page";
 import { Section } from "../components/layout/Section";
@@ -41,6 +42,17 @@ export default function Home() {
           This page is server-side-rendered with Next.js.
         </p>
       </Section>
+
+      <Footer>
+        <p>
+          GitHub:{" "}
+          <Link>
+            <a href="https://github.com/uhyo/declarative-shadow-dom-sample">
+              uhyo/declarative-shadow-dom-sample
+            </a>
+          </Link>
+        </p>
+      </Footer>
     </Page>
   );
 }
